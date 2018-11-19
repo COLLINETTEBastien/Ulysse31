@@ -1,0 +1,12 @@
+# Modèle créé le : Sat Nov 03 13:18:59 CET 2018 
+Partie (IdP_Partie, DateDebutP_Partie, DateFinP_DatePartieF, IdGagnante_Partie, #IdJC_JeuCarte, #IdJIA_JIA, #IdJH_JHumaine) 
+Joueuse (IdJ_Joueuse, DateCreaJ_Joueuse, CouleurJ_Joueuse) 
+Manche (IdM_Manche, ScoreJ1_Partie, ScoreJ2_Partie, DateDebutM_Manche, DateFinM_Manche, IdGagnanteM_Manche, #IdP_Partie, #IdJH_JHumaine, #IdJIA_JIA) 
+Tour (IdT_Tour, ScoreCourantJ1_Tour, ScoreCourantJ2_Tour, CogneJ1_Tour, CogneJ2_Tour, PilePiocheJ1_Tour, PilePiocheJ2_Tour, CartePiocheJ1_Tour, CartePiocheJ2_Tour, CarteDefausseJ1_Tour, CarteDefausseJ2_Tour, #IdM_Manche, #IdJIA_JIA, #IdJH_JHumaine) 
+JeuCarte (IdJC_JeuCarte, LabelJC_JeuCarte, UrlJC_JeuCarte) 
+Carte (CodeC_Carte, LabelC_Carte, ValeurC_Carte, CouleurC_Carte, ImageC_Carte, #IdJC_JeuCarte) 
+JHumaine (IdJH_JHumaine, NomJH_JHumaine, PrenomJH_JHumaine, #IdJ_Joueuse) 
+JIA (IdJIA_JIA, NomIA_JIA, #IdJ_Joueuse) 
+Configuration (IdConf_Configuration) 
+Date (DateConf_Date) 
+LGN_ConfIA (IdJIA_JIA, IdConf_Configuration, DateConf_Date, ValIA_LGN_ConfIA) 
