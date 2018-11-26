@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {!! Html::style('assets/css/bootstrap.css') !!}
         {!! Html::style('assets/css/mangas.css') !!}
-        {!! Html::style('assets/css/bootstrap.css') !!}
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     </head>
