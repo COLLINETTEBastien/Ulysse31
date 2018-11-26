@@ -9,13 +9,13 @@ class Jhumaine extends Model {
     protected $table = 'jhumaine';
     public $timestamps = false;
     protected $fillable = [
-        'idJ',
-		'dateCreaJ',
-		'couleurJ',
-		'nomJH',
-		'prenomJH',
-		'login',
-		'mdpJH'
+        'IDJ',
+        'dateCreaJ',
+        'couleurJ',
+        'nomJH',
+        'prenomJH',
+        'login',
+        'MDPJH'
         
     ];
     
@@ -26,8 +26,8 @@ class Jhumaine extends Model {
                 ->where('login', '=', $login)
                 ->first();
         if($jhumaine){
-            if($jhumaine->pwd_jhumaine == $pwd){
-                Session::put('id', $jhumaine->id_jhumaine);
+            if($jhumaine->MDPJH == $pwd){
+                Session::put('id', $jhumaine->IDJ);
                 $connected = true;
             }
         }

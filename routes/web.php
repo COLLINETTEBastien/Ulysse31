@@ -24,10 +24,10 @@ Route::get('/formLogin', function () {
 });
 
 // Afficher le formulaire d'authentification
-Route::get('/getLogin', 'JoueuseController@getLogin');
+Route::get('/getLogin', 'JhumaineController@getLogin');
 
 // Authentifie la Joueuse à partir du login et mdp saisis
-Route::post('/login', 'JoueuseController@signIn');
+Route::post('/login', 'JhumaineController@signIn');
 
 // Déloguer la Joueuse
-Route::get('/getLogout', 'JoueuseController@signOut');
+Route::get('/getLogout', 'JhumaineController@signOut');
